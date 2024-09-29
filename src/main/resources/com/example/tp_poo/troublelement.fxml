@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.TroublelementController">
+   <center>
+      <HBox maxHeight="-Infinity" maxWidth="750.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="750.0" style="-fx-radius-border: 30; -fx-border-color: transparent; -fx-background-radius: 30; -fx-background-color: #d2e8fe;">
+         <children>
+            <VBox maxWidth="191.0" prefHeight="70.0" prefWidth="191.0">
+               <children>
+                  <AnchorPane maxWidth="203.0" prefHeight="72.0" prefWidth="191.0" style="-fx-border-width: 0 1 0 0; -fx-border-color: #036;">
+                     <children>
+                        <Label fx:id="nom_trouble" layoutX="16.0" layoutY="8.0" maxWidth="162.0" prefHeight="65.0" prefWidth="162.0" textFill="#003366" underline="true" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <AnchorPane>
+               <children>
+                  <Label fx:id="categorie_trouble" alignment="CENTER" layoutX="9.0" layoutY="8.0" lineSpacing="1.0" prefHeight="44.0" prefWidth="530.0" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="32.0" prefWidth="750.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

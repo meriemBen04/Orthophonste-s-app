@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1000.0" stylesheets="@../../../directory/design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.LoginController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="loginform" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../directory/design.css">
+               <children>
+                  <AnchorPane disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="400.0" styleClass="anchorpane" stylesheets="@../../../directory/design.css">
+                     <children>
+                        <ImageView cache="true" fitHeight="238.0" fitWidth="378.0" layoutX="41.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/6490281-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="67.0" layoutY="82.0" prefHeight="88.0" prefWidth="265.0" text="My Cabinet D'Orthophonie " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="login_username" alignment="CENTER" layoutX="474.0" layoutY="251.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="430.0" promptText="Email">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="white-background" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <PasswordField fx:id="login_password" alignment="CENTER" layoutX="474.0" layoutY="330.0" prefHeight="30.0" prefWidth="430.0" promptText="Password" AnchorPane.topAnchor="330.0">
+                     <styleClass>
+                        <String fx:value="white-background" />
+                        <String fx:value="textfield" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </PasswordField>
+                  <TextField fx:id="login_show" layoutX="469.0" layoutY="186.0" prefHeight="30.0" prefWidth="430.0" promptText="Password" visible="false">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="white-background" />
+                     </styleClass>
+                  </TextField>
+                  <Button fx:id="create_account_btn" alignment="CENTER" layoutX="623.0" layoutY="522.0" mnemonicParsing="false" onAction="#Signupform" prefHeight="30.0" prefWidth="122.0" styleClass="btn1" text="Create account ">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="login_btn" alignment="CENTER" layoutX="568.0" layoutY="452.0" mnemonicParsing="false" onAction="#SignIn" prefHeight="39.0" prefWidth="230.0" styleClass="btn" stylesheets="@../../../directory/design.css" text="Login">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label fx:id="usernameErrorMessage" layoutX="481.0" layoutY="281.0" prefHeight="14.0" prefWidth="406.0" textFill="RED" />
+                  <Label fx:id="PasswordErrorMessage" layoutX="486.0" layoutY="361.0" prefHeight="14.0" prefWidth="406.0" textFill="RED" />
+                  <HBox layoutX="448.0" layoutY="86.0" prefHeight="100.0" prefWidth="482.0">
+                     <children>
+                        <Label prefHeight="98.0" prefWidth="482.0" text="        Bienvenu Dans Votre Cabinet d'Orthophonie ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

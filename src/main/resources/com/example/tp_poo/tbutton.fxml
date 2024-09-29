@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefWidth="730.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.tController">
+   <children>
+      <Button fx:id="testid" mnemonicParsing="false" prefHeight="26.0" prefWidth="267.0" styleClass="btn2" stylesheets="@../../../directory/design.css" text="Test">
+         <HBox.margin>
+            <Insets bottom="10.0" left="193.0" />
+         </HBox.margin></Button>
+   </children>
+</HBox>

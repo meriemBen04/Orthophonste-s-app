@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="754.0" stylesheets="@../../../directory/design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.evaluerobjectifController">
+    <children>
+      <AnchorPane prefHeight="67.0" prefWidth="760.0">
+         <children>
+            <Label fx:id="nomobjc" layoutY="4.0" prefHeight="46.0" prefWidth="478.0" style="-fx-border-radius: 5; -fx-background-radius: 5;" styleClass="white-background">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="noteobj" layoutX="606.0" layoutY="4.0" prefHeight="46.0" prefWidth="75.0" promptText="Note" style="-fx-border-color: transparent; -fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5;" styleClass="white-background" stylesheets="@../../../directory/design.css" />
+            <Label fx:id="typeobjc" alignment="CENTER" layoutX="485.0" layoutY="4.0" prefHeight="46.0" prefWidth="117.0" style="-fx-border-radius: 5; -fx-background-radius: 5;" styleClass="white-background">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="objc_atteint" layoutX="709.0" layoutY="9.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="26.0" style="-fx-border-radius: 5; -fx-background-radius: 5;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="nomobjerreur11" layoutX="606.0" layoutY="51.0" prefHeight="35.0" prefWidth="75.0" textFill="RED">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label fx:id="nomobjerreur111" layoutX="709.0" layoutY="44.0" prefHeight="35.0" prefWidth="43.0" text="objectif atteint?" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</HBox>

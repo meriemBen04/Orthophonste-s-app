@@ -1,0 +1,130 @@
+.white-background
+                                                            {
+                                                                -fx-background-color: white;
+                                                            }
+.btn1{
+
+    -fx-background-color : #ee494b;
+    -fx-text-fill : white;
+    -fx-background-radius : 10;
+
+}
+.btn{
+
+    -fx-background-color : #c4f3e3;
+    -fx-text-fill : white;
+    -fx-background-radius : 10;
+
+}
+.btn:hover{
+
+    -fx-background-color :linear-gradient(to bottom right, #ee494b, #c4f3e3) ;
+    -fx-text-fill : white;
+    -fx-background-radius : 10;
+
+}
+.textfield
+{
+    -fx-border-color: #fff;
+    -fx-border-width: .5px;
+    -fx-background-radius: 25;
+
+
+
+}
+.textfield:focused
+{
+    -fx-border-width: .8px;
+    -fx-border-radius: 10;
+    -fx-border-color: #c4f3e3;
+
+
+}
+
+.anchorpane
+{
+    -fx-background-color: #c4f3e3;
+
+
+}
+.anchorpane1
+{
+    -fx-background-color: transparent ;
+    -fx-background-radius: 20;
+    -fx-border-color: #ee494b ;
+    -fx-border-radius: 20;
+
+
+;
+
+}
+.check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color:transparent;
+    -fx-border-radius:3px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #ee494b;
+}
+.selected-border {
+    -fx-border-color: #fff;
+    -fx-border-width: 0 3 0 0;
+}
+
+.selected:hover {
+    -fx-background-color: #3c3d58;
+    -fx-cursor: hand;
+}
+.button3 {
+    -fx-background-color: linear-gradient(to top left, #35acf1, #f6b46f);
+    -fx-background-radius: 12;
+    -fx-border-style: solid;
+    -fx-border-radius: 12;
+    -fx-border-insets: -5;
+    -fx-border-color: linear-gradient(to top left, #35acf1, #f6b46f);
+}
+.button3:hover {
+    -fx-background-color: linear-gradient(to top left, #f6b46f, #35acf1);
+    -fx-background-radius: 12;
+    -fx-border-style: solid;
+    -fx-border-radius: 12;
+    -fx-border-insets: -5;
+    -fx-border-color: linear-gradient(to top left, #f6b46f, #35acf1);
+    -fx-cursor: hand;
+}
+.button3:pressed {
+    -fx-background-color: linear-gradient(to top left, #35acf1, #f6b46f);
+    -fx-background-radius: 12;
+    -fx-border-style: solid;
+    -fx-border-radius: 12;
+    -fx-border-insets: -5;
+    -fx-border-color: linear-gradient(to top left, #35acf1, #f6b46f);
+    -fx-cursor: hand;
+}
+
+.selected-border {
+    -fx-border-color: #fff;
+    -fx-border-width: 0 3 0 0;
+}
+
+.selected:hover {
+    -fx-background-color: #3c3d58;
+    -fx-cursor: hand;
+}
+
+.profile-input {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color:#ee494b;
+    -fx-text-fill: #000;
+}

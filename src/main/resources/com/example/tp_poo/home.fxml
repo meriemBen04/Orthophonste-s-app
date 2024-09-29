@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.Homecontroller">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="235.0" styleClass="anchorpane" stylesheets="@../../../directory/design.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="156.0" prefWidth="235.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="69.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="circular">
+                     <image>
+                        <Image url="@../../../images/or.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="utilisateur1" textFill="#f4f4f4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="edit_profile" mnemonicParsing="false" style="-fx-background-radius: 30;" styleClass="btn1" stylesheets="@../../../directory/design.css" text="Edit profile" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="419.0" prefWidth="235.0" spacing="10.0" stylesheets="@../../../directory/design.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="490.0" styleClass="selected" stylesheets="@../../../directory/design.css">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/SideBar/agenda.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label onMouseClicked="#handleRouting" text="Agenda" textFill="#f4f4f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="490.0" styleClass="selected" stylesheets="@../../../directory/design.css">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/SideBar/patient-3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label onMouseClicked="#handleRouting" text="Patients" textFill="#f4f4f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="selected" stylesheets="@../../../directory/design.css">
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../images/SideBar/patient-3.png" />
+                           </image>
+                        </ImageView>
+                        <Label onMouseClicked="#handleRouting" text="BO" textFill="#f4f4f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="selected" stylesheets="@../../../directory/design.css">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../images/SideBar/evaluation-2.png" />
+                           </image>
+                        </ImageView>
+                        <Label onMouseClicked="#handleRouting" text="Fiche de suivi" textFill="#f4f4f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="selected" stylesheets="@../../../directory/design.css">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../images/SideBar/tester-3.png" />
+                           </image>
+                        </ImageView>
+                        <Label onMouseClicked="#handleRouting" text="Testes" textFill="#f4f4f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="selected" stylesheets="@../../../directory/design.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/SideBar/utilisateur.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label onMouseClicked="#handleRouting" text="Votre profile" textFill="#f4f4f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="selected" stylesheets="@../../../directory/design.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+                           <image>
+                              <Image url="@../../../images/SideBar/se-deconnecter-3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label onMouseClicked="#handleRouting" text="Se déconnecter" textFill="#f4f4f4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="445.0" prefWidth="665.0" spacing="25.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="111.0" prefWidth="765.0">
+                     <children>
+                        <Label contentDisplay="CENTER" style="-fx-position-shape: center;" text="Bienvenue sur votre Application de Gestion de Cabinet d'Orthophonie" textFill="#00002c">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="10.0" right="50.0" top="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <VBox prefHeight="290.0" prefWidth="765.0">
+                     <padding>
+                        <Insets left="40.0" right="40.0" />
+                     </padding>
+                     <children>
+                        <Label text="Ce qu'on assure au niveau de cette fonctionalité">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="585.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/CheckSign.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="500.0">
+                                 <children>
+                                    <Label text="Planifiez et gérez vos rendez-vous (consultations, suivis, ateliers).">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="585.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/CheckSign.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="500.0">
+                                 <children>
+                                    <Label text="Créez et modifiez des bilans orthophoniques détaillés.">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="585.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/CheckSign.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="500.0">
+                                 <children>
+                                    <Label text="Gérez les objectifs thérapeutiques et évaluez les progrès.">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="585.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/CheckSign.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="500.0">
+                                 <children>
+                                    <Label text="Stockez et consultez les dossiers patients en toute sécurité.">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+
+</BorderPane>

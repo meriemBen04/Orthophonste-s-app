@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="653.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.ExerciceController">
+   <children>
+      <Label text="Consigne :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField />
+      <HBox alignment="TOP_CENTER" spacing="10.0">
+         <children>
+            <Label text="Materiel :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="26.0" prefWidth="385.0" />
+            <Label text="Nombre de fois :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="26.0" prefWidth="41.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

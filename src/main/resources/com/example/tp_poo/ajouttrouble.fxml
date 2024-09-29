@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.ajoutertroubleController">
+    <children>
+      <AnchorPane prefHeight="74.0" prefWidth="706.0">
+         <children>
+            <TextField fx:id="nomtrouble" prefHeight="50.0" prefWidth="408.0" promptText="Nom de trouble" styleClass="white-background" stylesheets="@../../../directory/design.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="type_trouble" layoutX="408.0" layoutY="-1.0" prefHeight="51.0" prefWidth="298.0" promptText="Type de trouble" style="-fx-border-color: transparent; -fx-background-color: white;" styleClass="white-background" stylesheets="@../../../directory/design.css" />
+            <Label fx:id="typetroubleerreur" layoutX="413.0" layoutY="53.0" prefHeight="18.0" prefWidth="292.0" textFill="#f70000" />
+            <Label fx:id="nomobjerreur" layoutY="53.0" prefHeight="18.0" prefWidth="131.0" textFill="RED" />
+            <Label fx:id="nomtroubleerror" layoutX="2.0" layoutY="50.0" prefHeight="18.0" prefWidth="408.0" textFill="#f70000" />
+         </children>
+      </AnchorPane>
+        <Button fx:id="ajouterobjectif" mnemonicParsing="false" onAction="#ajoutertrouble" prefHeight="51.0" prefWidth="52.0" style="-fx-border-color: transparent;" styleClass="white-background" stylesheets="@../../../directory/design.css">
+         <graphic>
+                <ImageView fitHeight="41.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/fichesuivi/plus.png" />
+                    </image>
+                </ImageView>
+         </graphic>
+        </Button>
+    </children>
+</HBox>
